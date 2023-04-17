@@ -10,7 +10,7 @@ public class singlylinkedlist {
         private   int data;  
         private ListNode next;
 
-        public ListNode(int data) {
+        public ListNode(int data) { 
             this.data = data;
             this.next = null;  
             count++;
@@ -57,9 +57,9 @@ public class singlylinkedlist {
                 previous=previous.next;
                 m++;
             }
-            ListNode current=previous.next;
+            ListNode temp=previous.next;
             previous.next=node;
-            node.next=current;
+            node.next=temp;
         }
     }
 
@@ -152,8 +152,8 @@ public class singlylinkedlist {
         ListNode current=head;
         ListNode nextnode= head.next;
         while(current.data!=searchvalue){
-            current=current.next;  
-            nextnode=current.next;  
+            nextnode=current.next;
+            current=current.next;    
         }
         current.next=newnode;
         newnode.next=nextnode;
