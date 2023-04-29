@@ -47,7 +47,15 @@ public class StackUsingLinkedlist {
         }
         return top.data;
     }
- 
+
+    public void displayfromlast(ListNode top){
+        if(top ==null){
+            return;
+        }
+        displayfromlast(top.next);
+        System.out.print(top.data+" ");
+    }
+
     public static void main(String[] args) {
         StackUsingLinkedlist objSamplestack=new StackUsingLinkedlist();
         ArrayList<Integer> al=new ArrayList<Integer>();
@@ -61,7 +69,8 @@ public class StackUsingLinkedlist {
         objSamplestack.display();
         System.out.println( objSamplestack.pop()); 
         objSamplestack.display();
-        System.out.println(objSamplestack.peek());   
+        System.out.println(objSamplestack.peek());  
+        objSamplestack.displayfromlast(objSamplestack.top);
         
     }
     
