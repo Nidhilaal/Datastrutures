@@ -1,7 +1,7 @@
 package string;
 
 
-public class stringmutable {
+public class StringMutable {
     public static void main(String[] args) {
         StringBuffer str= new StringBuffer("hello");
         str.append("world");
