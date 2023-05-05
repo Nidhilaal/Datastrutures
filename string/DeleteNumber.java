@@ -1,6 +1,6 @@
 package string;
 
-public class deletenumber {
+public class DeleteNumber {
 
     public static String convert(String str){
         StringBuffer s=new StringBuffer(str);
