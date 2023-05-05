@@ -1,5 +1,5 @@
 package timecomplexity;
-public class timecomplexity {
+public class TimeComplexity {
 
     public int findsum(int m){
         int sum=0;
@@ -11,7 +11,7 @@ public class timecomplexity {
     
     public static void main(String[] args) {
         double now= System.currentTimeMillis();
-        timecomplexity objTimecomplexity1=new timecomplexity();
+        TimeComplexity objTimecomplexity1=new TimeComplexity();
         System.out.println( objTimecomplexity1.findsum(3500));
         System.out.println("time taken is "+(System.currentTimeMillis()-now)+" millisecs");
 
