@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class singlylinkedlist {
+public class SinglyLinkedList {
     private ListNode head;
     static int count=0;
     private static class ListNode{
@@ -171,7 +171,7 @@ public class singlylinkedlist {
     }
 
     public static void main(String[] args) {
-        singlylinkedlist objLinkedlist= new singlylinkedlist();
+        SinglyLinkedList objSinglyLinkedList= new SinglyLinkedList();
         ArrayList<Integer> al= new ArrayList<Integer>();
         al.add(1);
         al.add(1);
@@ -181,46 +181,46 @@ public class singlylinkedlist {
         al.add(7);
         al.add(7);
         for (int i : al) {
-            objLinkedlist.insertend(i); 
+            objSinglyLinkedList.insertend(i); 
         }
 
-        objLinkedlist.display();
-        System.out.println("count is "+singlylinkedlist.count);  
+        objSinglyLinkedList.display();
+        System.out.println("count is "+SinglyLinkedList.count);  
         
-        objLinkedlist.insertfirst(4);
-        objLinkedlist.display();
-        System.out.println("count is "+singlylinkedlist.count);  
+        objSinglyLinkedList.insertfirst(4);
+        objSinglyLinkedList.display();
+        System.out.println("count is "+SinglyLinkedList.count);  
 
-        objLinkedlist.insertend(5);
-        objLinkedlist.display();
-        System.out.println("count is "+singlylinkedlist.count); 
+        objSinglyLinkedList.insertend(5);
+        objSinglyLinkedList.display();
+        System.out.println("count is "+SinglyLinkedList.count); 
 
-        objLinkedlist.insertmiddle(4, 3);
-        objLinkedlist.insertmiddle(7, 5);
+        objSinglyLinkedList.insertmiddle(4, 3);
+        objSinglyLinkedList.insertmiddle(7, 5);
 
-        objLinkedlist.display();
-        System.out.println("count is "+singlylinkedlist.count); 
+        objSinglyLinkedList.display();
+        System.out.println("count is "+SinglyLinkedList.count); 
 
-        objLinkedlist.deletefirst();
-        objLinkedlist.display();
-        System.out.println("count is "+singlylinkedlist.count);
+        objSinglyLinkedList.deletefirst();
+        objSinglyLinkedList.display();
+        System.out.println("count is "+SinglyLinkedList.count);
 
-        objLinkedlist.deletelast();
-        objLinkedlist.display();
-        System.out.println("count is "+ singlylinkedlist.count);
+        objSinglyLinkedList.deletelast();
+        objSinglyLinkedList.display();
+        System.out.println("count is "+ SinglyLinkedList.count);
 
-        objLinkedlist.insertbefore(1,5);
-        objLinkedlist.display();
-        System.out.println("count is "+singlylinkedlist.count);
+        objSinglyLinkedList.insertbefore(1,5);
+        objSinglyLinkedList.display();
+        System.out.println("count is "+SinglyLinkedList.count);
 
 
-        objLinkedlist.deletevalue(7);
-        objLinkedlist.display();
-        System.out.println("count is "+singlylinkedlist.count);
+        objSinglyLinkedList.deletevalue(7);
+        objSinglyLinkedList.display();
+        System.out.println("count is "+SinglyLinkedList.count);
 
-        objLinkedlist.reverse();
-        objLinkedlist.display();
-        System.out.println("count is "+singlylinkedlist.count);
+        objSinglyLinkedList.reverse();
+        objSinglyLinkedList.display();
+        System.out.println("count is "+SinglyLinkedList.count);
         
     }      
 }
