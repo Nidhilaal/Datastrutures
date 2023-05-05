@@ -1,6 +1,6 @@
 package string;
 
-public class replacealphabet {
+public class ReplaceAlphabet {
 
     static String replacedString(String str,int n){
         char[] carr=str.toCharArray();
