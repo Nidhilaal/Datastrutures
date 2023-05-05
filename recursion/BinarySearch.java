@@ -1,6 +1,6 @@
 package recursion;
 
-public class binarysearch {
+public class BinarySearch {
     
     public int search(int arr[],int low,int high,int key){
         int mid=(low+high-1)/2;
@@ -15,7 +15,7 @@ public class binarysearch {
     }
     public static void main(String[] args) {
         int arr[]={1,2,4,6,7,9};
-        binarysearch objBinarysearch=new binarysearch();
+        BinarySearch objBinarysearch=new BinarySearch();
         System.out.println(objBinarysearch.search(arr,0, 6, 4));
                
     }   
