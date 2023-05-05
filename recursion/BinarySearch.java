@@ -15,8 +15,8 @@ public class BinarySearch {
     }
     public static void main(String[] args) {
         int arr[]={1,2,4,6,7,9};
-        BinarySearch objBinarysearch=new BinarySearch();
-        System.out.println(objBinarysearch.search(arr,0, 6, 4));
+        BinarySearch objBinarySearch=new BinarySearch();
+        System.out.println(objBinarySearch.search(arr,0, 6, 4));
                
     }   
 }
