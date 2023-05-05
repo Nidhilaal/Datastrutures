@@ -13,8 +13,7 @@ public class ReplaceAlphabet {
     
     public static void main(String[] args) {
         String str="helloworld"; 
-        System.out.println(replacedString(str,2));
-        
+        System.out.println(replacedString(str,2));  
     }
     
 }
