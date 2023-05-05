@@ -1,6 +1,6 @@
 package recursion;
 
-public class factorial {
+public class Factorial {
     static int fact(int n){
         if (n==1){
             return 1;
