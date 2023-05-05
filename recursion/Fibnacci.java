@@ -1,6 +1,6 @@
 package recursion;
 
-public class fibnacci {
+public class Fibnacci {
     static int fib(int n){
         if (n<2){
             return n;
