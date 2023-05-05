@@ -18,7 +18,7 @@ public class DoublyLinkedList {
         
     }
 
-    public void displayforward(){
+    public void displayForward(){
         if (head==null){
             return;
         }
@@ -30,7 +30,7 @@ public class DoublyLinkedList {
         System.out.println("null");
     }
 
-    public void displaybackward(){
+    public void displayBackward(){
         ListNode current=tail;
         
         while (current!=null){
@@ -40,7 +40,7 @@ public class DoublyLinkedList {
         System.out.println("null");
     }
 
-    public void insertfirst(int value){
+    public void insertFirst(int value){
         ListNode newnode=new ListNode(value);
         if (head==null){
             tail=newnode;
@@ -50,7 +50,7 @@ public class DoublyLinkedList {
         head=newnode;
     }
 
-    public void insertlast(int value){
+    public void insertLast(int value){
         ListNode newnode=new ListNode(value);
         if (head==null){
             tail=newnode;
@@ -63,11 +63,11 @@ public class DoublyLinkedList {
         
     }
 
-    public void insertmiddle(int value, int pos){
+    public void insertMiddle(int value, int pos){
         ListNode newnode=new ListNode(value);
         ListNode back= head;
         if (pos==1){
-            insertfirst(value);      
+            insertFirst(value);      
         }
         int m=1;
         while(m<pos-1){
@@ -81,14 +81,14 @@ public class DoublyLinkedList {
 
     }
 
-    public void deletefirst(){
+    public void deleteFirst(){
         head=head.next;
         head.previous=null;
         count--;
         
     }
     
-    public void deletelast(){
+    public void deleteLast(){
         tail=tail.previous;
         tail.next=null;
         count--;
@@ -102,31 +102,31 @@ public class DoublyLinkedList {
         al.add(4);
         al.add(1);
         for (int i : al) {
-                objDoublylinkedlist.insertlast(i);
+                objDoublylinkedlist.insertLast(i);
         }
     
-        objDoublylinkedlist.displayforward();
+        objDoublylinkedlist.displayForward();
         System.out.println("count is "+DoublyLinkedList.count);
   
-        objDoublylinkedlist.insertfirst(10);
-        objDoublylinkedlist.displayforward(); 
+        objDoublylinkedlist.insertFirst(10);
+        objDoublylinkedlist.displayForward(); 
         System.out.println("count is "+DoublyLinkedList.count);
 
-        objDoublylinkedlist.insertlast(5);
-        objDoublylinkedlist.displayforward();
+        objDoublylinkedlist.insertLast(5);
+        objDoublylinkedlist.displayForward();
         System.out.println("count is "+DoublyLinkedList.count);
 
-        objDoublylinkedlist.insertmiddle(4,2);
-        objDoublylinkedlist.displayforward();
+        objDoublylinkedlist.insertMiddle(4,2);
+        objDoublylinkedlist.displayForward();
         System.out.println("count is "+DoublyLinkedList.count);
 
-        objDoublylinkedlist.deletefirst();
-        objDoublylinkedlist.deletelast();
+        objDoublylinkedlist.deleteFirst();
+        objDoublylinkedlist.deleteLast();
 
-        objDoublylinkedlist.displayforward();
+        objDoublylinkedlist.displayForward();
         System.out.println("count is "+DoublyLinkedList.count);
 
-        objDoublylinkedlist.displayforward();
+        objDoublylinkedlist.displayForward();
         System.out.println("count is "+DoublyLinkedList.count);
         
  

@@ -11,8 +11,8 @@ public class TimeComplexity {
     
     public static void main(String[] args) {
         double now= System.currentTimeMillis();
-        TimeComplexity objTimecomplexity1=new TimeComplexity();
-        System.out.println( objTimecomplexity1.findsum(3500));
+        TimeComplexity objTimeComplexity=new TimeComplexity();
+        System.out.println( objTimeComplexity.findsum(3500));
         System.out.println("time taken is "+(System.currentTimeMillis()-now)+" millisecs");
 
     }
