@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class arrayreversal {
+public class ArrayReversal {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         System.out.println("enter the limit");
