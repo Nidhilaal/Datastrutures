@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class stringreversal {
+public class StringReversal {
     public static void main(String[] args) {
         System.out.println("Enter the string to be reversed");
         Scanner scan=new Scanner(System.in);
