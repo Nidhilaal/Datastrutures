@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class duplicatesremove {
+public class DuplicatesRemove {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         System.out.println("enter the limit");
