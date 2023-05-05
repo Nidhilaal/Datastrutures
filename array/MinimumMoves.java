@@ -3,7 +3,7 @@ package array;
 
 import java.util.Scanner;
 
-public class minimummoves {
+public class MinimumMoves {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("enter the limit:");
