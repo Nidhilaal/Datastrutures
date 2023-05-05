@@ -1,6 +1,6 @@
 package recursion;
 
-public class numberreversal {
+public class NumberReversal {
     static int sum=0;
     static void reverse(int n){
         
