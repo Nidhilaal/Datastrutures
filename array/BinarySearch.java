@@ -1,7 +1,7 @@
 package array;
 // binary search can be done only on sorted arrays
 
-public class binarysearch { 
+public class BinarySearch { 
 
     public int search(int[] arr,int key){
         int low=0;
@@ -22,8 +22,8 @@ public class binarysearch {
 
     public static void main(String[] args) {
         int [] arr= {1,2,3,4,5,6};
-        binarysearch objBinarysearch=new binarysearch();
-        System.out.println("value found at "+objBinarysearch.search(arr, 4));
+        BinarySearch objBinarySearch=new BinarySearch();
+        System.out.println("value found at "+objBinarySearch.search(arr, 4));
              
     }
     
