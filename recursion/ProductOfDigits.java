@@ -13,5 +13,4 @@ public class ProductOfDigits. {
         System.out.println(a);
         
     }
-    
 }
