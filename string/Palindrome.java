@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class palindrome {
+public class Palindrome {
 
     static boolean palin(String word){
         char[] carr=word.toCharArray();
