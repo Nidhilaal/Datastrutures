@@ -1,6 +1,6 @@
 package recursion;
 
-public class countzeroes {
+public class CountZeroes {
 
     static int zero(int n){
         if(n==0){
