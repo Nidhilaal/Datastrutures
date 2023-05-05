@@ -1,7 +1,7 @@
 package linkedlist;
 import java.util.ArrayList;
 
-public class doublylinkedlist {
+public class DoublyLinkedList {
     private static ListNode head;
     private static ListNode tail;
     static int count=0;
@@ -96,7 +96,7 @@ public class doublylinkedlist {
 
     public static void main(String[] args) {
         
-        doublylinkedlist objDoublylinkedlist= new doublylinkedlist();
+        DoublyLinkedList objDoublylinkedlist= new DoublyLinkedList();
         ArrayList<Integer> al =new ArrayList<Integer>();
         al.add(5);
         al.add(4);
@@ -106,28 +106,28 @@ public class doublylinkedlist {
         }
     
         objDoublylinkedlist.displayforward();
-        System.out.println("count is "+doublylinkedlist.count);
+        System.out.println("count is "+DoublyLinkedList.count);
   
         objDoublylinkedlist.insertfirst(10);
         objDoublylinkedlist.displayforward(); 
-        System.out.println("count is "+doublylinkedlist.count);
+        System.out.println("count is "+DoublyLinkedList.count);
 
         objDoublylinkedlist.insertlast(5);
         objDoublylinkedlist.displayforward();
-        System.out.println("count is "+doublylinkedlist.count);
+        System.out.println("count is "+DoublyLinkedList.count);
 
         objDoublylinkedlist.insertmiddle(4,2);
         objDoublylinkedlist.displayforward();
-        System.out.println("count is "+doublylinkedlist.count);
+        System.out.println("count is "+DoublyLinkedList.count);
 
         objDoublylinkedlist.deletefirst();
         objDoublylinkedlist.deletelast();
 
         objDoublylinkedlist.displayforward();
-        System.out.println("count is "+doublylinkedlist.count);
+        System.out.println("count is "+DoublyLinkedList.count);
 
         objDoublylinkedlist.displayforward();
-        System.out.println("count is "+doublylinkedlist.count);
+        System.out.println("count is "+DoublyLinkedList.count);
         
  
     }
