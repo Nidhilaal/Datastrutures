@@ -3,7 +3,7 @@
 
 package string;
 
-public class patternmatching {
+public class PatternMatching {
   
     public static void main(String[] args) {
         String text="helloworld";
