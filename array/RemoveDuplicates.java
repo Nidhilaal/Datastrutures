@@ -1,7 +1,7 @@
 package array;
 //sorted array
 
-public class removeduplicates {
+public class RemoveDuplicates {
     public static int removeDuplicates(int array[], int n){
         if(n==0 || n==1){
         return n;
