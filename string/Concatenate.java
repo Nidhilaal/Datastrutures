@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class concatenate {
+public class Concatenate {
     public static void main(String[] args) {
         System.out.println("Enter the strings");
         Scanner scan=new Scanner(System.in);
