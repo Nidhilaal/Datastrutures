@@ -2,7 +2,7 @@ package heap;
 
 import java.util.Arrays;
 
-public class heapSort {
+public class HeapSort {
     public void sort(int[] arr){
         int n= arr.length;
         for(int i=n/2-1;i>=0;i--){
@@ -38,7 +38,7 @@ public class heapSort {
     }
     public static void main(String[] args) {
         int [] arr= {4,3,6,1};
-        heapSort objHeapSort=new heapSort();
+        HeapSort objHeapSort=new HeapSort();
         objHeapSort.sort(arr);
 
         System.out.println(Arrays.toString(arr));
