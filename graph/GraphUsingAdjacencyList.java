@@ -1,6 +1,8 @@
 package graph;
 
 import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class GraphUsingAdjacencyList {
     private LinkedList<Integer>[] adjList;
@@ -37,6 +39,48 @@ public class GraphUsingAdjacencyList {
         return sb.toString();
 
     }
+
+    public void bfs(int s){
+        boolean[] visited=new boolean[V];
+        Queue<Integer> q=new LinkedList<>();
+        visited[s]=true;
+        q.offer(s);
+        while(!q.isEmpty()){
+            int u = q.poll();
+            System.out.print(u+" ");
+            for (Integer v : adjList[u]) {
+                if(!visited[v]){
+                    visited[v]=true;
+                    q.offer(v);
+                }
+
+            }
+
+        }
+
+    }
+
+    public void dfs(int s){
+        boolean[] visited= new boolean[V];
+        Stack<Integer> stack=new Stack<>();
+        stack.push(s);
+        while(!stack.isEmpty()){
+            int u=stack.pop();
+            if(!visited[u]){
+                visited[u]=true;
+                System.out.print(u+" ");
+                for (Integer v : adjList[u]) {
+                    if(!visited[v]){
+                        stack.push(v);
+                    }
+                    
+                }
+            }
+
+        }
+    }
+    
+
     public static void main(String[] args) {
 
         GraphUsingAdjacencyList g= new GraphUsingAdjacencyList(4);
@@ -46,8 +90,11 @@ public class GraphUsingAdjacencyList {
         g.addEdge(2, 3);
         g.addEdge(3, 0);
 
-        System.out.println(g.tostring());        
-
+        System.out.println(g.tostring());
+        
+        g.bfs(0);
+        System.out.println();
+        g.dfs(0);
     }
     
 }
