@@ -26,26 +26,26 @@ public class SinglyLinkedList {
         System.out.println("null");  
     }
 
-    public void insertfirst(int value){
-        ListNode newnode=new ListNode(value);
-        newnode.next=head;
-        head=newnode;  
+    public void insertFirst(int value){
+        ListNode newNode=new ListNode(value);
+        newNode.next=head;
+        head=newNode;  
     }
      
-    public  void insertend(int value){
-        ListNode newnode=new ListNode(value);
+    public  void insertEnd(int value){
+        ListNode newNode=new ListNode(value);
         if(head==null){
-            head=newnode;
+            head=newNode;
             return;
         }
         ListNode current=head;
         while(current.next!=null){
             current=current.next;
         }
-        current.next=newnode;
+        current.next=newNode;
     }
 
-    public void insertmiddle(int value,int pos){
+    public void insertMiddle(int value,int pos){
         ListNode node=new ListNode(value);
         if (pos==1){
             node.next=head;
@@ -63,13 +63,13 @@ public class SinglyLinkedList {
         }
     }
 
-    public void deletefirst(){
+    public void deleteFirst(){
         head=head.next;
         count--;
         
     }
 
-    public void deletelast(){
+    public void deleteLast(){
         ListNode current= head;
         ListNode previous =null;
     
@@ -81,7 +81,7 @@ public class SinglyLinkedList {
         count--;
     }
 
-    public void deletevalue(int value){
+    public void deleteValue(int value){
         ListNode current= head;
         ListNode previous=null;
         if (head==null|| head.next==null){
@@ -94,7 +94,7 @@ public class SinglyLinkedList {
                     previous.next=current.next;
                     count--;
                 }else{
-                deletefirst();
+                deleteFirst();
                 }
             }else{
                 previous=current;
@@ -102,7 +102,7 @@ public class SinglyLinkedList {
             current=current.next;     
         } 
         if (current.data==value){
-            deletelast();
+            deleteLast();
             return;
         }
     }
@@ -123,7 +123,7 @@ public class SinglyLinkedList {
         }
     } 
 
-    public void removeDuplicateofsortedelist(){
+    public void removeDuplicateOfSortedeList(){
         ListNode current=head;
         while (current.next!=null){
             if(current.data==current.next.data){
@@ -135,28 +135,28 @@ public class SinglyLinkedList {
         }
     }
 
-    public void insertbefore(int value,int searchvalue){
-        ListNode newnode=new ListNode(value);
+    public void insertBefore(int value,int searchvalue){
+        ListNode newNode=new ListNode(value);
         ListNode current= head;
         ListNode previous=null;
         while (current.data!=searchvalue){
             previous=current;
             current=current.next;
         }
-        previous.next=newnode;
-        newnode.next=current;
+        previous.next=newNode;
+        newNode.next=current;
     }
 
-    public void insertafter(int value,int searchvalue){
-        ListNode newnode=new ListNode(value);
+    public void insertAfter(int value,int searchvalue){
+        ListNode newNode=new ListNode(value);
         ListNode current=head;
         ListNode nextnode= head.next;
         while(current.data!=searchvalue){
             nextnode=current.next;
             current=current.next;    
         }
-        current.next=newnode;
-        newnode.next=nextnode;
+        current.next=newNode;
+        newNode.next=nextnode;
     }
 
     public void reverse(){
@@ -182,41 +182,41 @@ public class SinglyLinkedList {
         al.add(7);
         al.add(7);
         for (int i : al) {
-            objLinkedList.insertend(i); 
+            objLinkedList.insertEnd(i); 
         }
 
         objLinkedList.display();
         System.out.println("count is "+SinglyLinkedList.count);  
         
-        objLinkedList.insertfirst(4);
+        objLinkedList.insertFirst(4);
         objLinkedList.display();
         System.out.println("count is "+SinglyLinkedList.count);  
 
-        objLinkedList.insertend(5);
+        objLinkedList.insertEnd(5);
         objLinkedList.display();
         System.out.println("count is "+SinglyLinkedList.count); 
 
-        objLinkedList.insertmiddle(4, 3);
-        objLinkedList.insertmiddle(7, 5);
+        objLinkedList.insertMiddle(4, 3);
+        objLinkedList.insertMiddle(7, 5);
 
         objLinkedList.display();
         System.out.println("count is "+SinglyLinkedList.count); 
 
-        objLinkedList.deletefirst();
+        objLinkedList.deleteFirst();
         objLinkedList.display();
         System.out.println("count is "+SinglyLinkedList.count);
 
-        objLinkedList.deletelast();
+        objLinkedList.deleteLast();
         objLinkedList.display();
         System.out.println("count is "+ SinglyLinkedList.count);
 
-        objLinkedList.insertbefore(1,5);
+        objLinkedList.insertBefore(1,5);
         objLinkedList.display();
         System.out.println("count is "+
         SinglyLinkedList.count);
 
 
-        objLinkedList.deletevalue(7);
+        objLinkedList.deleteValue(7);
         objLinkedList.display();
         System.out.println("count is "+
         SinglyLinkedList.count);
